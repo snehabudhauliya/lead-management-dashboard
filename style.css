@@ -1,0 +1,129 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+ 
+}
+
+.login-page{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.login-box {
+  background: white;
+  padding: 25px;
+  width: 320px;
+  border-radius: 8px;
+ 
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #0056b3;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  width: 150px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.filters {
+  margin-bottom: 15px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  margin-right: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+}
+
+thead {
+  background: #f1f1f1;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: #000;   
+}
+
+tbody tr {
+  height: auto;  
+}
+
+tbody{
+    display: table-row-group;
+}
+
+#pagination{
+    margin-top:15px;
+}
+
+#pagination button{
+    margin: 3px;
+    padding: 6px 10px;
+    cursor:pointer;
+}
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.logout-btn {
+  padding: 6px 14px;
+  cursor: pointer;
+  background-color: #ff4d4d;
+  color: white;
+  border:none;
+  border-radius: 4px;
+}

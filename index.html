@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Lead Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+  <div class="login-box">
+    <h2>Login</h2>
+
+    <input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<script>
+function login() {
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  if (email === "" || password === "") {
+    alert("Please enter email and password");
+    return;
+  }
+
+  // ✅ login success
+  localStorage.setItem("isLoggedIn", "true");
+  window.location.href = "dashboard.html";
+}
+</script>
+
+
+</body>
+</html>
